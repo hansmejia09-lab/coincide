@@ -68,7 +68,7 @@ ul { padding-left: 1.2em; }
 .section-head h2 { font-size: 30px; }
 .section-head p { font-size: 17px; }
 
-section[id] { scroll-margin-top: 90px; }
+section[id], [id] { scroll-margin-top: 90px; }
 
 .on-dark { background: var(--dark); color: var(--dark-text); }
 .on-dark h2, .on-dark h3 { color: var(--bg); }
@@ -440,6 +440,51 @@ tfoot td { font-weight: 700; background: var(--alt); border-top: 2px solid var(-
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ---------- Listas de políticas numeradas ---------- */
+.policy-list {
+  list-style: none;
+  counter-reset: policy;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.policy-list li {
+  counter-increment: policy;
+  position: relative;
+  padding-left: 36px;
+  color: var(--muted);
+  font-size: 15px;
+}
+.policy-list li::before {
+  content: counter(policy);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--bg);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.policy-list li strong { color: var(--ink); }
+.on-dark .policy-list li { color: var(--dark-text); }
+.on-dark .policy-list li strong { color: var(--bg); }
+
+h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--teal-dark);
+  margin: 0 0 4px;
+}
+.on-dark h4 { color: var(--bg); }
 
 /* ---------- Misc ---------- */
 .two-col-list { columns: 2; column-gap: 40px; }
