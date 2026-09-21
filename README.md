@@ -22,7 +22,8 @@ coincide-website/
 │   ├── css/styles.css
 │   ├── js/main.js
 │   └── images/
-│       ├── logo.svg
+│       ├── logo.png
+│       ├── logo-icon.png
 │       └── croquis-planta.svg
 ├── README.md
 └── .gitignore
@@ -47,7 +48,8 @@ y visitar `http://localhost:8000`.
 
 ## Imágenes
 
-- `assets/images/logo.svg` — logotipo ilustrativo generado a partir de la descripción de la especificación (siluetas de familia + taza de café dentro de un trazo en "C"). Es un diseño propio, no una foto; sustitúyelo por el logotipo oficial cuando exista.
+- `assets/images/logo.png` — logotipo oficial de COINCIDE (banner completo con emblema, wordmark y lema), usado en la sección de Identidad corporativa.
+- `assets/images/logo-icon.png` — recorte cuadrado del emblema del logotipo oficial, usado como ícono en el encabezado.
 - `assets/images/croquis-planta.svg` — plano ilustrativo de la planta baja con las 11 áreas numeradas. Sustitúyelo por el plano arquitectónico real cuando esté disponible.
 - **Recorrido fotográfico** (sección Instalaciones): al ser un proyecto universitario sin fotografías reales de un local, el sitio usa fotografías libres de [Wikimedia Commons](https://commons.wikimedia.org/), enlazadas directamente por URL (no se descargaron al repositorio) para mantenerlo liviano. Créditos:
 

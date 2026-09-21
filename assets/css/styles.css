@@ -153,20 +153,13 @@ section[id] { scroll-margin-top: 90px; }
   color: var(--ink);
 }
 .brand .brand-mark {
-  width: 34px; height: 34px;
+  width: 36px; height: 36px;
   border-radius: 50%;
-  position: relative;
+  object-fit: cover;
   flex-shrink: 0;
+  background: var(--bg);
+  border: 1px solid var(--line);
 }
-.brand .brand-mark::before, .brand .brand-mark::after {
-  content: "";
-  position: absolute;
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  top: 4px;
-}
-.brand .brand-mark::before { background: var(--teal); left: 2px; }
-.brand .brand-mark::after { background: var(--orange); opacity: .85; left: 12px; }
 
 .nav-links {
   display: flex;
@@ -451,7 +444,14 @@ tfoot td { font-weight: 700; background: var(--alt); border-top: 2px solid var(-
 @media (max-width: 900px) { .two-col-list { columns: 1; } }
 
 .crest-figure { text-align: center; }
-.crest-figure figcaption { font-size: 14px; color: var(--muted); margin-top: 12px; }
+.crest-figure img {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+}
+.crest-figure figcaption { font-size: 14px; font-style: italic; color: var(--muted); margin-top: 14px; }
 
 .location-media { border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
 .location-media img { width: 100%; height: 320px; object-fit: cover; }
