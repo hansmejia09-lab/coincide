@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="croquisTitle croquisDesc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="croquisTitle croquisDesc">
   <title id="croquisTitle">Croquis de planta baja de COINCIDE</title>
   <desc id="croquisDesc">Plano ilustrado de la planta baja con áreas numeradas: 1 recepción, 2 coworking, 3 salas de reuniones, 4 salón de capacitación, 5 oficina privada, 6 cafetería, 7 oficinas administrativas, 8 servicios sanitarios, 9 terraza, 10 área de cuidado infantil, 11 parqueo.</desc>
 
-  <rect width="900" height="620" fill="#FAF7F1"/>
-  <rect x="20" y="20" width="760" height="560" fill="#FFFFFF" stroke="#E4DFD4" stroke-width="3"/>
+  <rect width="1120" height="620" fill="#FBF5EA"/>
+  <rect x="20" y="20" width="760" height="560" fill="#FFFFFF" stroke="#E4DBC6" stroke-width="3"/>
 
   <!-- Rooms grid -->
-  <g stroke="#2C6E68" stroke-width="2" fill="#F2EFE6">
+  <g stroke="#0C6F97" stroke-width="2" fill="#F4ECDA">
     <rect x="40" y="40" width="180" height="120"/>
     <rect x="230" y="40" width="330" height="240"/>
     <rect x="570" y="40" width="190" height="115"/>
@@ -21,7 +21,7 @@
   </g>
 
   <!-- Labels -->
-  <g font-family="'Work Sans', Arial, sans-serif" font-size="16" fill="#1E2A25" text-anchor="middle">
+  <g font-family="'Work Sans', Arial, sans-serif" font-size="16" fill="#16262F" text-anchor="middle">
     <text x="130" y="105">1</text>
     <text x="395" y="165">2</text>
     <text x="665" y="102">3</text>
@@ -36,21 +36,21 @@
   </g>
 
   <!-- Legend -->
-  <g font-family="'Work Sans', Arial, sans-serif" font-size="17" fill="#1E2A25">
-    <text x="800" y="45" font-weight="700" font-size="20" fill="#1F4F4B">Áreas de la</text>
-    <text x="800" y="68" font-weight="700" font-size="20" fill="#1F4F4B">planta baja</text>
+  <g font-family="'Work Sans', Arial, sans-serif" font-size="17" fill="#16262F">
+    <text x="800" y="45" font-weight="700" font-size="20" fill="#0A4D66">Áreas de la</text>
+    <text x="800" y="68" font-weight="700" font-size="20" fill="#0A4D66">planta baja</text>
     <text x="800" y="105">1. Recepción</text>
     <text x="800" y="133">2. Coworking</text>
     <text x="800" y="161">3. Salas de reuniones</text>
     <text x="800" y="189">4. Salón de capacitación</text>
     <text x="800" y="217">5. Oficina privada</text>
     <text x="800" y="245">6. Cafetería</text>
-    <text x="800" y="273">7. Oficinas admin.</text>
+    <text x="800" y="273">7. Oficinas administrativas</text>
     <text x="800" y="301">8. Servicios sanitarios</text>
     <text x="800" y="329">9. Terraza</text>
-    <text x="800" y="357">10. Área infantil</text>
+    <text x="800" y="357">10. Área de cuidado infantil</text>
     <text x="800" y="385">11. Parqueo</text>
   </g>
 
-  <text x="450" y="605" text-anchor="middle" font-family="'Work Sans', Arial, sans-serif" font-size="14" fill="#4A554E" font-style="italic">Croquis referencial — sustituir por el plano arquitectónico real de las instalaciones.</text>
+  <text x="560" y="605" text-anchor="middle" font-family="'Work Sans', Arial, sans-serif" font-size="14" fill="#4C6069" font-style="italic">Croquis referencial — sustituir por el plano arquitectónico real de las instalaciones.</text>
 </svg>
