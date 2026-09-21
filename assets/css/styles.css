@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
 
 /* ---------- Variables ---------- */
+/* Paleta inspirada en los colores reales del logotipo de COINCIDE: azul vívido, naranja cálido y un verde azulado de acento. */
 :root {
-  --ink:#1E2A25; --muted:#4A554E; --bg:#FAF7F1; --surface:#FFFFFF;
-  --teal:#2C6E68; --teal-dark:#1F4F4B; --orange:#E2792E; --line:#E4DFD4;
-  --dark:#1E2A25; --dark-card:#2A3830; --dark-text:#C7CFC9; --alt:#F2EFE6;
+  --ink:#16262F; --muted:#4C6069; --bg:#FBF5EA; --surface:#FFFFFF;
+  --teal:#0C6F97; --teal-dark:#0A4D66; --orange:#F2792E; --orange-dark:#D85F17; --teal-accent:#159E85; --line:#E4DBC6;
+  --dark:#0F2733; --dark-card:#173A48; --dark-text:#C7DEE4; --alt:#F4ECDA;
 }
 
 /* ---------- Reset ---------- */
@@ -109,7 +110,7 @@ section[id] { scroll-margin-top: 90px; }
   padding: 28px;
   transition: transform .25s ease, box-shadow .25s ease;
 }
-.card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(30,42,37,0.10); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(22,38,47,0.12); }
 .on-dark .card, .card.dark-card {
   background: var(--dark-card);
   border-color: rgba(255,255,255,0.08);
@@ -123,6 +124,8 @@ section[id] { scroll-margin-top: 90px; }
   margin-bottom: 16px;
   font-size: 20px;
 }
+.card .icon.icon-orange { background: var(--orange); }
+.card .icon.icon-teal-accent { background: var(--teal-accent); }
 .card h3 { font-size: 19px; margin-bottom: 8px; }
 .card p { margin-bottom: 0; font-size: 15px; }
 
@@ -131,7 +134,7 @@ section[id] { scroll-margin-top: 90px; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 247, 241, 0.85);
+  background: rgba(251, 245, 234, 0.85);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
