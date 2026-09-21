@@ -454,3 +454,41 @@ tfoot td { font-weight: 700; background: var(--alt); border-top: 2px solid var(-
 .crest-figure figcaption { font-size: 14px; color: var(--muted); margin-top: 12px; }
 
 .location-media { border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+.location-media img { width: 100%; height: 320px; object-fit: cover; }
+
+/* ---------- Galería de fotos ---------- */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 18px;
+}
+.photo-gallery figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.photo-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  background: var(--alt);
+}
+.photo-gallery figcaption {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.photo-credit {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 16px;
+}
+.photo-credit a { color: var(--teal-dark); }
+@media (max-width: 900px) {
+  .photo-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
