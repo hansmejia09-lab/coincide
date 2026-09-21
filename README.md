@@ -67,6 +67,27 @@ y visitar `http://localhost:8000`.
 
 Verifica cada enlace antes de la entrega final: Wikimedia puede renombrar o mover archivos, y el entorno de desarrollo usado para este PR no tuvo salida a internet para comprobar la carga en vivo. Si algún enlace no carga, ábrelo en el navegador, confirma el nombre de archivo actual del lado de Wikimedia Commons y actualiza la URL `Special:FilePath/<archivo>?width=500` correspondiente en `index.html`. Todas son fotos referenciales para ambientar el proyecto académico; para un sitio real de producción, sustitúyelas por fotografías propias de las instalaciones.
 
+## Fuente del contenido
+
+Todo el texto del sitio se transcribió directamente de `Proyecto_COINCIDE.pdf` (documento "Proyecto Creación de una Empresa", Fundamentos de Administración, CUNSAC-USAC), sección por sección y sin resumir tablas ni listas. El croquis de planta (`assets/images/croquis-planta.svg`) es una ilustración propia referencial; todo lo demás —incluidas las 16 tablas numeradas, el Anexo A y el Anexo B— proviene del documento.
+
+### Inconsistencias del documento original conservadas tal cual
+
+Por instrucción explícita, el sitio **no corrige silenciosamente** el contenido del PDF. Se detectaron los siguientes puntos que probablemente sean errores de redacción o de copiado en el documento fuente; se muestran en el sitio exactamente como aparecen en el PDF:
+
+- **Objetivo específico de Planeación:** "mediante una ocupación mínima del **0%** de la capacidad instalada" — el 0% parece un error de tipeo (posiblemente debía ser 65%, como en los Objetivos de la Empresa).
+- **Tabla de incentivos variables:** "Bono por ocupación" tiene la condición de calificación (4.5/5) que lógicamente correspondería a "Bono por satisfacción del cliente", y esta última fila aparece **dos veces** con condiciones distintas (70% de ocupación y 4.5/5). Parece un error de copiado/mezcla de filas.
+- **Tabla 6 (Factores motivacionales):** las filas "Autonomía operativa" y "Actividades de integración" tienen exactamente la misma descripción ("Convivencias, celebración de cumpleaños…"), que temáticamente encaja solo con la segunda.
+- **Tabla 4 (Coordinador Comercial y de Marketing):** el campo "Experiencia" es idéntico al de la Tabla 2 (Coordinador Administrativo-Financiero) — "en áreas administrativas, financieras o de recursos humanos" — cuando lógicamente debería referirse a experiencia comercial o de mercadeo.
+- **Aguinaldo:** el documento indica que el aguinaldo es "pagadero en julio", cuando en la legislación laboral guatemalteca el aguinaldo se paga en diciembre (julio corresponde al Bono 14). Se conserva tal como está escrito en el PDF.
+- **Tramo de control vs. perfil de puesto:** el párrafo de "Tramo de Control" describe que cada coordinador supervisa a un solo colaborador directo, pero la Tabla 3 (perfil del Coordinador de Operaciones) le asigna dos ("Personal a cargo": Anfitrión de Recepción y de Coffee Station, y Auxiliar de Operaciones y Monitoreo de Eventos). El organigrama del sitio sigue la Tabla 3 por ser la fuente más específica; se aclara con una nota junto al organigrama.
+- **Numeración de tablas:** el documento reutiliza el número "Tabla 7" tanto para la Escala Salarial Base como para la Estructura de Incentivos Variables, y salta directamente de "Tabla 7" a "Tabla 9" (no existe una "Tabla 8"). El sitio muestra ambos contenidos completos pero deja sin número la segunda para no inducir a error.
+- Varias erratas menores de tipeo se mantuvieron tal cual (p. ej. "COICIDE" en la Tabla 5, "Coffe Station" sin la segunda "e" en el párrafo de Estructura Organizacional, "legalmente construido" en vez de "constituido" en la política de contrataciones externas, "Código en Comercio" en vez de "Código de Comercio").
+- **Introducción:** la frase "que constituyen negocios dependientes, sino elementos que agregan valor…" parece faltarle un "no" (sentido probable: "que **no** constituyen negocios independientes, sino elementos…"). Se conserva tal como aparece extraída del PDF.
+- Un párrafo del documento original en la sección de Control repetía literalmente la misma cláusula dos veces seguidas dentro de una sola oración ("...cuando la organización verifica que el trabajo realizado corresponde a lo planificado y, cuando la organización verifica que el trabajo realizado corresponde a lo planificado y, cuando existen desviaciones..."). En este caso sí se quitó la repetición literal en el sitio (dejando la oración una sola vez), porque reproducirla tal cual generaría exactamente el tipo de bloque de texto duplicado que este sitio busca evitar; se documenta aquí para que quede constancia del cambio.
+
+Ninguna cifra, nombre ni afirmación de contenido fue inventada o alterada — solo se restauró la puntuación/formato donde el PDF tenía saltos de línea o separadores numéricos rotos por la extracción (por ejemplo, "Q 45,00" → "Q45,000", verificado porque la suma total de la Tabla 12 solo cuadra con ese valor).
+
 ## Pendientes antes de publicar
 
 - **Datos de contacto:** reemplaza los marcadores `[correo@coincide.gt]`, `[Dirección del inmueble]` y `[Teléfono de contacto]` en `index.html` por los datos reales antes de publicar.
