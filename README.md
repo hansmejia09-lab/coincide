@@ -9,6 +9,7 @@ Proyecto académico del curso *Fundamentos de Administración*, CUNSAC, Universi
 - HTML5 semántico
 - CSS3 (variables, flexbox, grid) — `assets/css/styles.css`
 - JavaScript vanilla (ES6, sin dependencias) — `assets/js/main.js`
+- [Chart.js](https://www.chartjs.org/) (vía CDN de jsDelivr) — única dependencia externa, usada solo para las dos gráficas circulares de la sección Financiero (`assets/js/charts.js`)
 - Tipografías de Google Fonts (Fraunces + Work Sans)
 
 No requiere build step ni framework. Es un sitio estático listo para GitHub Pages.
@@ -20,7 +21,9 @@ coincide-website/
 ├── index.html
 ├── assets/
 │   ├── css/styles.css
-│   ├── js/main.js
+│   ├── js/
+│   │   ├── main.js
+│   │   └── charts.js
 │   └── images/
 │       ├── logo.png
 │       ├── logo-icon.png
@@ -51,21 +54,25 @@ y visitar `http://localhost:8000`.
 - `assets/images/logo.png` — logotipo oficial de COINCIDE (banner completo con emblema, wordmark y lema), usado en la sección de Identidad corporativa.
 - `assets/images/logo-icon.png` — recorte cuadrado del emblema del logotipo oficial, usado como ícono en el encabezado.
 - `assets/images/croquis-planta.svg` — plano ilustrativo de la planta baja con las 11 áreas numeradas. Sustitúyelo por el plano arquitectónico real cuando esté disponible.
-- **Recorrido fotográfico** (sección Instalaciones): al ser un proyecto universitario sin fotografías reales de un local, el sitio usa fotografías libres de [Wikimedia Commons](https://commons.wikimedia.org/), enlazadas directamente por URL (no se descargaron al repositorio) para mantenerlo liviano. Créditos:
+- **Fotografías** (sección Servicios y Anexo A): al ser un proyecto universitario sin fotografías reales de un local, el sitio usa fotografías libres de [Wikimedia Commons](https://commons.wikimedia.org/), enlazadas directamente por URL (no se descargaron al repositorio) para mantenerlo liviano. Varias imágenes se reutilizan entre las tarjetas de Servicios y el recorrido fotográfico del Anexo A, ya que representan el mismo ambiente. Créditos:
 
 | Imagen en el sitio | Archivo de origen | Licencia |
 |---|---|---|
 | Antigua Guatemala (sección Ubicación) | [Santa Catalina Arch - Antigua Guatemala Feb 2020.jpg](https://commons.wikimedia.org/wiki/File:Santa_Catalina_Arch_-_Antigua_Guatemala_Feb_2020.jpg) | Wikimedia Commons |
-| Recepción | [Doctor office waiting room.jpg](https://commons.wikimedia.org/wiki/File:Doctor_office_waiting_room.jpg) | Wikimedia Commons |
-| Coworking | [Coworking Space in Berlin.jpg](https://commons.wikimedia.org/wiki/File:Coworking_Space_in_Berlin.jpg) | Wikimedia Commons |
-| Salón de eventos | [Seminar room and mezzanine.jpg](https://commons.wikimedia.org/wiki/File:Seminar_room_and_mezzanine.jpg) | Wikimedia Commons |
-| Sala de reuniones | [Large meeting room (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Large_meeting_room_(Unsplash).jpg) | Wikimedia Commons / Unsplash |
-| Coffee Station | [Interior Johnie's Coffee Shop 2021.jpg](https://commons.wikimedia.org/wiki/File:Interior_Johnie's_Coffee_Shop_2021.jpg) | Wikimedia Commons |
-| Área infantil | [Children's play area - geograph.org.uk - 7487942.jpg](https://commons.wikimedia.org/wiki/File:Children's_play_area_-_geograph.org.uk_-_7487942.jpg) | Wikimedia Commons |
-| Oficinas administrativas | [Desk-office-workspace-coworking (23699033283).jpg](https://commons.wikimedia.org/wiki/File:Desk-office-workspace-coworking_(23699033283).jpg) | Wikimedia Commons |
-| Parqueo | [Parking lot landscaped with trees.JPG](https://commons.wikimedia.org/wiki/File:Parking_lot_landscaped_with_trees.JPG) | Wikimedia Commons |
+| Recepción (Anexo A) | [Doctor office waiting room.jpg](https://commons.wikimedia.org/wiki/File:Doctor_office_waiting_room.jpg) | Wikimedia Commons |
+| Coworking (Servicios + Anexo A) | [Coworking Space in Berlin.jpg](https://commons.wikimedia.org/wiki/File:Coworking_Space_in_Berlin.jpg) | Wikimedia Commons |
+| Centro de capacitadores / Salón de eventos (Servicios + Anexo A) | [Seminar room and mezzanine.jpg](https://commons.wikimedia.org/wiki/File:Seminar_room_and_mezzanine.jpg) | Wikimedia Commons |
+| Salas de reuniones (Servicios + Anexo A) | [Large meeting room (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Large_meeting_room_(Unsplash).jpg) | Wikimedia Commons / Unsplash |
+| Eventos corporativos (Servicios) | [Meeting room, table and paper board.jpg](https://commons.wikimedia.org/wiki/File:Meeting_room,_table_and_paper_board.jpg) | Wikimedia Commons |
+| Programa de networking (Servicios) | [Man and Woman Shaking Hands.jpg](https://commons.wikimedia.org/wiki/File:Man_and_Woman_Shaking_Hands.jpg) | Wikimedia Commons |
+| Estación de café / Coffee Station (Servicios + Anexo A) | [Interior Johnie's Coffee Shop 2021.jpg](https://commons.wikimedia.org/wiki/File:Interior_Johnie's_Coffee_Shop_2021.jpg) | Wikimedia Commons |
+| Área infantil (Servicios + Anexo A) | [Kids at daycare.jpg](https://commons.wikimedia.org/wiki/File:Kids_at_daycare.jpg) | Wikimedia Commons (CC BY 2.0) |
+| Oficinas administrativas (Anexo A) | [Desk-office-workspace-coworking (23699033283).jpg](https://commons.wikimedia.org/wiki/File:Desk-office-workspace-coworking_(23699033283).jpg) | Wikimedia Commons |
+| Parqueo (Anexo A) | [Parking lot landscaped with trees.JPG](https://commons.wikimedia.org/wiki/File:Parking_lot_landscaped_with_trees.JPG) | Wikimedia Commons |
 
 Verifica cada enlace antes de la entrega final: Wikimedia puede renombrar o mover archivos, y el entorno de desarrollo usado para este PR no tuvo salida a internet para comprobar la carga en vivo. Si algún enlace no carga, ábrelo en el navegador, confirma el nombre de archivo actual del lado de Wikimedia Commons y actualiza la URL `Special:FilePath/<archivo>?width=500` correspondiente en `index.html`. Todas son fotos referenciales para ambientar el proyecto académico; para un sitio real de producción, sustitúyelas por fotografías propias de las instalaciones.
+
+> Nota: la foto anterior del área infantil (un parque exterior sin techar, en un entorno frío) se reemplazó por "Kids at daycare.jpg" — un espacio interior cálido y techado, más acorde al servicio real de cuidado infantil por horas.
 
 ## Fuente del contenido
 
@@ -87,6 +94,13 @@ Por instrucción explícita, el sitio **no corrige silenciosamente** el contenid
 - Un párrafo del documento original en la sección de Control repetía literalmente la misma cláusula dos veces seguidas dentro de una sola oración ("...cuando la organización verifica que el trabajo realizado corresponde a lo planificado y, cuando la organización verifica que el trabajo realizado corresponde a lo planificado y, cuando existen desviaciones..."). En este caso sí se quitó la repetición literal en el sitio (dejando la oración una sola vez), porque reproducirla tal cual generaría exactamente el tipo de bloque de texto duplicado que este sitio busca evitar; se documenta aquí para que quede constancia del cambio.
 
 Ninguna cifra, nombre ni afirmación de contenido fue inventada o alterada — solo se restauró la puntuación/formato donde el PDF tenía saltos de línea o separadores numéricos rotos por la extracción (por ejemplo, "Q 45,00" → "Q45,000", verificado porque la suma total de la Tabla 12 solo cuadra con ese valor).
+
+## Gráficas financieras
+
+La sección Financiero incluye dos gráficas circulares (Chart.js), justo después de la Tabla 16:
+
+- **Estructura de financiamiento propuesto**: 60% aporte de socios (Q617,614) / 40% financiamiento bancario (Q411,743), tomado directo de la Tabla 15.
+- **Proyección de ingresos mensuales por línea**: porcentajes calculados sobre la suma real de las seis líneas de la Tabla 16 (Q140,600), no sobre el total de Q147,100 que aparece en esa tabla. **Hay una diferencia de Q6,500 entre ambos números en el documento fuente original** (la suma de las seis líneas no cuadra con el total que el propio PDF declara); la gráfica lo señala en su leyenda para que quede visible, en vez de ocultar la discrepancia. Vale la pena revisarlo en el documento original antes de una exposición formal.
 
 ## Pendientes antes de publicar
 
