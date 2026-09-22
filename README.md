@@ -100,7 +100,16 @@ Ninguna cifra, nombre ni afirmación de contenido fue inventada o alterada — s
 La sección Financiero incluye dos gráficas circulares (Chart.js), justo después de la Tabla 16:
 
 - **Estructura de financiamiento propuesto**: 60% aporte de socios (Q617,614) / 40% financiamiento bancario (Q411,743), tomado directo de la Tabla 15.
-- **Proyección de ingresos mensuales por línea**: porcentajes calculados sobre la suma real de las seis líneas de la Tabla 16 (Q140,600), no sobre el total de Q147,100 que aparece en esa tabla. **Hay una diferencia de Q6,500 entre ambos números en el documento fuente original** (la suma de las seis líneas no cuadra con el total que el propio PDF declara); la gráfica lo señala en su leyenda para que quede visible, en vez de ocultar la discrepancia. Vale la pena revisarlo en el documento original antes de una exposición formal.
+- **Proyección de ingresos mensuales por línea**: porcentajes calculados sobre el total real de la Tabla 16, Q140,600.
+
+### Corrección aplicada al total de la Tabla 16
+
+El documento fuente original (`Proyecto_COINCIDE.pdf`) declaraba un total de Q147,100 en la Tabla 16, pero la suma de sus seis líneas (Q49,500 + Q10,800 + Q22,000 + Q13,500 + Q30,800 + Q14,000) da Q140,600 — una diferencia de Q6,500. Esta discrepancia se detectó al construir las gráficas y se reportó al autor del sitio, quien confirmó corregir el total para que cuadre con la suma real. Por eso, a diferencia del resto de inconsistencias listadas abajo (que se conservan tal cual por no haber sido revisadas con el autor), aquí sí se modificaron dos cifras respecto al PDF original:
+
+- Tabla 16, total: Q147,100 → **Q140,600**.
+- Párrafo de cierre de Capital: margen mensual proyectado Q16,320.00 → **Q9,820.00** (Q140,600 − Q130,780 de costos fijos), recalculado en consecuencia.
+
+El resto del texto de esa sección (el mes 14 como punto de equilibrio esperado) no se recalculó, ya que depende de supuestos adicionales (curva de ocupación, amortización de la inversión inicial) que el documento no detalla.
 
 ## Pendientes antes de publicar
 
